@@ -1,0 +1,230 @@
+/* Estrutura Basica */
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	/* Fundo e Cor do Corpo */
+	background-image: url('fundo.png');
+	background-repeat: repeat;
+	background-attachment: scroll;
+	/* Fontes */
+	font: 30px Arial, helvetica, sans-serif;
+}
+
+/* Cabecalho */
+#cabecalho{
+	width: 900px;
+	height: 388px;
+	margin: auto;
+	border: 2px solid black;
+}
+
+/* Navegação */
+#navegacao{
+	/* Fonte e fundo da Div */
+	background: dimgray;
+	text-align: center;
+	border: 2px solid black;
+	/* Tamanho e margem da Divisão */
+	width: 900px;
+	height: 50px;
+	margin: auto;
+}
+.nav_link{
+	/* Fonte e cor da tag a */
+	text-decoration: none;
+	font-size: 0.9em;
+	color: whitesmoke;
+}
+
+/* Conteudo */
+#conteudo{
+	/* Tamanho e Margem da Divisão */
+	width: 900px;
+	height: auto;
+	margin: auto;
+	/* Espaçamento da Esquerda da Div */
+	padding: 2px;
+	/* Fonte tamanho da Dvisao */
+	font-size: 0.5em;
+	/* Cor e fundo */
+	background: whitesmoke;
+	/* Texto formatado para paragrafo */
+	text-indent: 20px;
+}
+h1{
+	color: seagreen;
+	padding-left: 20px;
+}
+p{
+	padding-left: 20px;
+}
+.photo{
+	/* Tamanho da Imagem */
+	width: 640px;
+	height: 425;
+	/* Bordas e Margem da Imagem */	
+	border: 10px inset gray;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+/* Disparo de Email */
+#informacao{
+	width: 640px;
+	height: 425;
+	border: 2px solid black;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	font-weight: bold;
+	text-align: left;
+}
+#assunto{
+	/* Tamanho */
+	width: 500px;
+	height: 300px;
+	/* Espaçamento e Margem */
+	margin-left: 5px;
+	padding: 2px;
+	/* Borda */
+	border: 2px solid black;
+	border-radius: 15px;	
+}
+#botao{
+	/* Margem do Botão  */
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	/* Design do Botão */
+	background: whitesmoke;
+	/* Texto do Botão */
+	font-size: 1em;
+	color: seagreen;
+	font-weight: bold;
+	/* Espacamento */
+	padding: 5px;
+}
+.inc_info{
+	/* Formatação do Texto */
+	color: seagreen;
+	font-style: bold;
+	font-size: 1.5em;
+	text-align: left;	
+	/* Margem do Texto */
+	margin-left: 5px;
+}
+.inc_botao{
+	/* Margem e Borda */
+	margin-left: 5px;
+	/* Bordas */
+	border: 2px black solid;
+	border-radius: 15px;
+}
+
+/* Rodape */
+#rodape{
+	/* Margem da divisão */
+	margin: auto;
+	/* formatação do Texto do Rodape */
+	text-align: center;
+	font-size: 0.5em;
+	/* Espaçamento da Divisão */
+	padding-top: 30px;
+	/* Tamanho da Divisão */
+	width: 900px;
+	height: 50px;
+}
+
+/* Reajusta Para Telas */
+
+/* Celulares Pequenos */
+@media screen and (min-width: 260px) and (max-width: 319px) {
+	body{
+		/* Fontes */
+		font: 16px Arial, helvetica, sans-serif;
+	}
+	#cabecalho{
+		width: 300px;
+		height: 129px;		
+	}	
+	#conteudo{
+		/* Tamanho e Margem da Divisão */
+		width: 300px;
+		height: auto;
+		margin: auto;
+	}	
+	#rodape{
+		width: 300px;
+		height: 50px;
+	}
+	#navegacao{
+		width: 300px;
+		height: 50px;
+		margin: auto;
+	}
+	#informacao{
+		width: 200px;
+		height: 132;
+	}
+	.photo{
+		/* Tamanho da Imagem */
+		width: 200px;
+		height: 132px;
+	}	
+	#assunto{
+		/* Tamanho */
+		width: 150px;
+		height: 132px;	
+	}				
+	img{
+		width: 300px;
+		height: 129px;
+	}
+}
+
+/* Celulares Padrões */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	body{
+		/* Fontes */
+		font: 20px Arial, helvetica, sans-serif;
+	}
+	#cabecalho{
+		width: 400px;
+		height: 172px;		
+	}	
+	#conteudo{
+		/* Tamanho e Margem da Divisão */
+		width: 400px;
+		height: auto;
+		margin: auto;
+	}	
+	#rodape{
+		width: 300px;
+		height: 50px;
+	}
+	#navegacao{
+		width: 400px;
+		height: 50px;
+		margin: auto;
+	}
+	#informacao{
+		width: 300px;
+		height: 199;
+	}
+	.photo{
+		/* Tamanho da Imagem */
+		width: 300px;
+		height: 199px;
+	}	
+	#assunto{
+		/* Tamanho */
+		width: 250px;
+		height: 199px;	
+	}		
+	img{
+		width: 400px;
+		height: 172px;
+	}
+}
