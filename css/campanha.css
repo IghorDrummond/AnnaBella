@@ -143,7 +143,12 @@ p{
 		width: 400px;
 		height: 50px;
 		margin: auto;
-	}			
+	}
+	.photo{
+		/* Tamanho da Imagem */
+		width: 200px;
+		height: 132px;
+	}				
 	img{
 		width: 400px;
 		height: 172px;
